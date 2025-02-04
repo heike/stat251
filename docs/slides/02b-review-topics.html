@@ -10,8 +10,8 @@
   <meta name="generator" content="quarto-1.6.40">
 
   <meta name="author" content="Stat 251">
-  <meta name="dcterms.date" content="2025-01-23">
-  <title>Stat 251 - Data Wrangling – Introduction</title>
+  <meta name="dcterms.date" content="2025-01-30">
+  <title>Stat 251 - Data Wrangling – Programming Review</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
@@ -30,7 +30,7 @@
       vertical-align: middle;
     }
   </style>
-  <link rel="stylesheet" href="../site_libs/revealjs/dist/theme/quarto-bbe7401fe57d4b791b917637bb662036.css">
+  <link rel="stylesheet" href="../site_libs/revealjs/dist/theme/quarto-cafb11b5f51d1c6dca451fea611f5bab.css">
   <link href="../site_libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
   <link href="../site_libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
   <link href="../site_libs/revealjs/plugin/reveal-menu/quarto-menu.css" rel="stylesheet">
@@ -128,7 +128,8 @@
     <div class="slides">
 
 <section id="title-slide" class="quarto-title-block center">
-  <h1 class="title">Introduction</h1>
+  <h1 class="title">Programming Review</h1>
+  <p class="subtitle">Working Environment and Programming Logic</p>
 
 <div class="quarto-title-authors">
 <div class="quarto-title-author">
@@ -138,350 +139,118 @@ Stat 251
 </div>
 </div>
 
-  <p class="date">2025-01-23</p>
+  <p class="date">2025-01-30</p>
 </section>
-<section>
-<section id="introductions" class="title-slide slide level1 center">
-<h1>Introductions</h1>
-
-</section>
-<section id="introduce-yourself" class="slide level2">
-<h2>Introduce yourself!</h2>
+<section id="last-class" class="slide level2">
+<h2>Last Class</h2>
 <ul>
-<li><p>Name / Year / Major</p></li>
-<li><p>What do you hope to learn in this class?</p></li>
-<li><p>Previous computing experience?</p></li>
-<li><p>Is a poptart a ravioli? Why or why not?</p></li>
-</ul>
-</section>
-<section id="my-introduction" class="slide level2">
-<h2>My Introduction</h2>
+<li><p>Worked on Homework #2</p></li>
+<li><p>Identified several useful functions and packages:</p>
 <ul>
-<li><p>Heike Hofmann</p></li>
-<li><p>Professor in Statistics</p></li>
-<li><p>At UNL since August, I was at ISU for 20 years</p></li>
-<li><p>first computer language was Pascal :)</p></li>
-<li><p>R user since 1996, Python user (? I have learned it four times by now)</p></li>
-</ul>
-</section>
-<section id="on-poptarts-and-ravioli" class="slide level2">
-<h2>On PopTarts and Ravioli:</h2>
-
-<img data-src="fig/cube_rule_food.jpg" class="r-stretch quarto-figure-center"><p class="caption"><span class="small"><a href="https://www.reddit.com/r/coolguides/comments/ri0kvs/the_cube_rule_of_food_identification/">The Cube Rule of Food</a>, from Reddit</span></p><p>Thus, a PopTart is a calzone.</p>
-</section></section>
-<section>
-<section id="syllabus" class="title-slide slide level1 center">
-<h1>Syllabus</h1>
-
-</section>
-<section id="contact-info" class="slide level2">
-<h2>Contact Info</h2>
+<li><p>packages/libraries</p>
 <ul>
-<li><p>Email: <a href="mailto:hhofmann4@unl.edu?subject=Stat251">hhofmann4@unl.edu</a></p></li>
-<li><p>Office: 346D Hardin Hall North Wing</p></li>
-<li><p>Office Hours: TBD</p></li>
-</ul>
-</section>
-<section id="course-objectives" class="slide level2">
-<h2>Course Objectives</h2>
-<div class="fragment">
-<ol type="1">
-<li>Use appropriate visualizations to explore and assess data and its applicability to a problem</li>
-</ol>
-</div>
-<div class="fragment">
-<ol start="2" type="1">
-<li>Write code to reshape and reformat moderately complex and/or messy data in a reproducible manner</li>
-</ol>
-</div>
-<div class="fragment">
-<ol start="3" type="1">
-<li>Create graphical displays to explore data, assess statistical models, and present model results</li>
-</ol>
-</div>
-<div class="fragment">
-<ol start="4" type="1">
-<li>Adapt pre-existing code for sophisticated visualizations to new data.</li>
-</ol>
-</div>
-</section>
-<section id="course-objectives-1" class="slide level2">
-<h2>Course Objectives</h2>
-<div class="fragment">
-<ol start="5" type="1">
-<li>Implement an algorithm or procedure for data modification given in pseudocode</li>
-</ol>
-</div>
-<div class="fragment">
-<ol start="6" type="1">
-<li>Write pseudocode to describe and document modifications made to a data set</li>
-</ol>
-</div>
-<div class="fragment">
-<ol start="7" type="1">
-<li>Access documentation and source code to determine how software works (or why it doesn’t)</li>
-</ol>
-</div>
-<div class="fragment">
-<ol start="8" type="1">
-<li>Identify problems in a data set that limit the analyses which are appropriate for the data</li>
-</ol>
-</div>
-</section>
-<section id="textbook" class="slide level2">
-<h2>Textbook</h2>
-<p><a href="https://srvanderplas.github.io/stat-computing-r-python/">https://srvanderplas.github.io/stat-computing-r-python/</a></p>
-
-<img data-src="https://srvanderplas.github.io/stat-computing-r-python/build_deps/cover.png" alt="Cover image of the textbook" class="r-stretch"></section>
-<section id="course-materials" class="slide level2">
-<h2>Course Materials</h2>
-<div class="columns">
-<div class="column">
-<ul>
-<li>Canvas
-<ul>
-<li>quizzes</li>
-<li>weekly readings</li>
-<li>homework/exam/project submission</li>
+<li>in R: <code>stringr</code>, <code>stringi</code></li>
+<li>in python: <code>re</code></li>
 </ul></li>
-</ul>
-</div><div class="column">
+<li><p>functions</p>
 <ul>
-<li><a href="https://unl-statistics.github.io/stat251/">Course site</a>
-<ul>
-<li>slides</li>
-<li>weekly readings</li>
-<li>homework/exam/project descriptions</li>
+<li>in R: <code>tolower</code>, <code>stri_reverse</code>, <code>stri_sub_all</code></li>
+<li>in python: <code>.lower()</code>, <code>[::-1]</code>, <code>re.sub</code></li>
 </ul></li>
+</ul></li>
+<li><p>If you made at least one submission to github, you have some points for homework #2 in Canvas</p></li>
 </ul>
-</div><p><span class="small">Everything should be cross-linked properly but email me if there’s an issue.</span></p>
-</div>
 </section>
-<section id="class-schedule" class="slide level2">
-<h2>Class Schedule</h2>
-
-<img data-src="01-Syllabus-and-Introductions_files/figure-revealjs/unnamed-chunk-1-1.png" width="960" class="r-stretch"></section>
-<section id="outline" class="slide level2 scrollable smaller">
-<h2>Outline</h2>
-<p>Subject to change based on the events of the semester…</p>
-<div class="cell">
-<div class="cell-output-display">
-<table class="caption-top">
-<thead>
-<tr class="header">
-<th style="text-align: left;">Date</th>
-<th style="text-align: left;">Topic</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td style="text-align: left;">Jan 21</td>
-<td style="text-align: left;">Getting Started</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">Jan 23</td>
-<td style="text-align: left;">Version Control</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">Jan 28</td>
-<td style="text-align: left;">Review: Functions</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">Jan 30</td>
-<td style="text-align: left;">Review: Functions</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">Feb 4</td>
-<td style="text-align: left;">Review: Data Structures</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">Feb 6</td>
-<td style="text-align: left;">Review: Data Structures</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">Feb 11</td>
-<td style="text-align: left;">Data Input</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">Feb 13</td>
-<td style="text-align: left;">Data Input</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">Feb 18</td>
-<td style="text-align: left;">Data Visualization</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">Feb 20</td>
-<td style="text-align: left;">Data Visualization</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">Feb 25</td>
-<td style="text-align: left;">Data Cleaning</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">Feb 27</td>
-<td style="text-align: left;">Data Cleaning</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">Mar 4</td>
-<td style="text-align: left;">Exam 1 Questions</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">Mar 6</td>
-<td style="text-align: left;">Strings</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">Mar 11</td>
-<td style="text-align: left;">Strings</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">Mar 13</td>
-<td style="text-align: left;">Midterm Due</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">Mar 25</td>
-<td style="text-align: left;">Reshaping Data</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">Mar 27</td>
-<td style="text-align: left;">Reshaping Data</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">Apr 1</td>
-<td style="text-align: left;">Joining Data</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">Apr 3</td>
-<td style="text-align: left;">Joining Data</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">Apr 8</td>
-<td style="text-align: left;">Dates and Times</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">Apr 10</td>
-<td style="text-align: left;">Dates and Times</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">Apr 15</td>
-<td style="text-align: left;">Project Work</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">Apr 17</td>
-<td style="text-align: left;">Project Work</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">Apr 22</td>
-<td style="text-align: left;">Lists</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">Apr 24</td>
-<td style="text-align: left;">Lists</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">Apr 29</td>
-<td style="text-align: left;">Project Work</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">May 1</td>
-<td style="text-align: left;">Screencast Video Due</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">May 6</td>
-<td style="text-align: left;">Spatial Data</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">May 8</td>
-<td style="text-align: left;">Peer Review of Screencast Due</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">May 14</td>
-<td style="text-align: left;">Scheduled Final</td>
-</tr>
-</tbody>
-</table>
-</div>
-</div>
-</section>
-<section id="grades" class="slide level2">
-<h2>Grades</h2>
-<table class="caption-top">
-<thead>
-<tr class="header">
-<th>Assignments</th>
-<th>Weight</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Reading Quizzes</td>
-<td>10%</td>
-</tr>
-<tr class="even">
-<td>Weekly Homework &amp; Participation</td>
-<td>50%</td>
-</tr>
-<tr class="odd">
-<td>Midterm Exam</td>
-<td>20%</td>
-</tr>
-<tr class="even">
-<td>Project</td>
-<td>20%</td>
-</tr>
-</tbody>
-</table>
-<p>Approximately Weekly Homework – started in class</p>
-</section>
-<section id="academic-integrity-policy" class="slide level2">
-<h2>Academic Integrity Policy</h2>
+<section id="todays-goal" class="title-slide slide level1 center">
+<h1>Today’s goal</h1>
 <ul>
-<li><p>You may (should!) work with each other on homework assignments</p></li>
-<li><p>Work alone on exams</p></li>
-<li><p>You must be able to explain anything you submit<br>
-<span class="smaller">At my discretion, I can use a one-on-one discussion of your work to replace the grade for that work.</span></p></li>
-<li><p>ChatGPT, StackOverflow, Google are tools, but they do not help you think</p></li>
+<li><p>make at least one submission to Github</p></li>
+<li><p>Review function writing: <a href="https://srvanderplas.github.io/stat-computing-r-python/part-gen-prog/05-functions.html">section 13</a></p></li>
+<li><p>Code chunks in quarto documents</p></li>
 </ul>
-</section></section>
-<section id="university-policies" class="title-slide slide level1 center">
-<h1>University Policies</h1>
-<p>https://executivevc.unl.edu/academic-excellence/teaching-resources/course-policies/</p>
 </section>
 
-<section>
-<section id="setting-up" class="title-slide slide level1 center">
-<h1>Setting Up</h1>
+<section id="what-chatgbt-thinks-palindromes-are" class="title-slide slide level1 center">
+<h1>What Chatgbt thinks palindromes are …</h1>
 
 </section>
-<section id="install-course-software" class="slide level2">
-<h2>Install Course Software</h2>
-<p><a href="https://srvanderplas.github.io/stat-computing-r-python/part-tools/02-setting-up-computer.html">Textbook Chapter 2</a></p>
-<iframe width="100%" height="600px" src="https://srvanderplas.github.io/stat-computing-r-python/part-tools/02-setting-up-computer.html" title="Setting Up"></iframe>
 
+<section id="section" class="title-slide slide level1 center">
+<h1></h1>
+<blockquote>
+<p>Create some palindromes with topics from the R tidyverse</p>
+</blockquote>
+<p>ChatGPT said:</p>
+<p>Sure, I can get creative with that! Here are some palindromes inspired by the R tidyverse package:</p>
+<p>ggplot palindrome:</p>
+<p>“plot, ggplot, ggplot, top, lg”</p>
+<p>dplyr palindrome:</p>
+<p>“pipe, dep, ed, epip”</p>
+<p>tidyr palindrome:</p>
+<p>“tidy, rid, id, ydit”</p>
+<p>stringr palindrome:</p>
+<p>“strings, r, r, sgnirts” tibble palindrome:</p>
 </section>
-<section id="next-time" class="slide level2">
-<h2>Next Time</h2>
-<p>We’ll work on <a href="https://srvanderplas.github.io/stat-computing-r-python/part-tools/05-git-and-github.html">Version Control with Git</a></p>
-<div class="columns">
-<div class="column">
-<p>Please read before class:</p>
+
+<section id="section-1" class="title-slide slide level1 center">
+<h1></h1>
+<blockquote>
+<p>The first one is not a palindrome</p>
+</blockquote>
+<p>ChatGPT said:</p>
+<p>You’re absolutely right! My bad on that one. A palindrome needs to read the same backward and forward. Let me fix that for you! Here’s a proper one:</p>
+<p>For ggplot:</p>
+<p>“ggplot, tol, log, gg”</p>
+<p>That works better as a true palindrome. Thanks for catching that! Would you like more examples, or should I tweak any of the others?</p>
+</section>
+
+<section id="from-a-block-of-code-to-functions" class="title-slide slide level1 center">
+<h1>From a block of code to functions</h1>
+<p>When you execute the same code multiple times, you should wrap the code into a function:</p>
+
+<img data-src="fig/palindrome-code-blocks.png" class="r-stretch"></section>
+
+<section id="code-block-to-function" class="title-slide slide level1 center">
+<h1>Code block to function</h1>
+
+<img data-src="fig/palindrome-function.png" class="r-stretch"></section>
+
+<section id="function-definitions" class="title-slide slide level1 center">
+<h1>Function definitions</h1>
+
+<img data-src="https://srvanderplas.github.io/stat-computing-r-python/images/gen-prog/Annotating_function_syntax.png" class="r-stretch"></section>
+
+<section id="as-an-extra-challenge-for-extra-credit" class="title-slide slide level1 center">
+<h1>As an extra challenge … (for extra credit)</h1>
+<p>Can you establish how fast your function <code>palindrome</code> is?</p>
+<p><a href="https://www.r-bloggers.com/2017/05/5-ways-to-measure-running-time-of-r-code/">Measuring speed in R</a></p>
+<p><a href="https://docs.python.org/3/library/timeit.html#module-timeit">Measuring speed in python</a></p>
+<p>Which is faster? R or python? - You might have to make multiple calls to the functions to capture differences</p>
+</section>
+
+<section id="dos-and-donts" class="title-slide slide level1 center">
+<h1>Dos and Don’ts</h1>
+<p>There are some things we should not (ever) do in R Markdown (or quarto) documents:</p>
 <ul>
-<li><a href="https://srvanderplas.github.io/stat-computing-r-python/part-tools/01-computer-basics.html">Computer Basics</a></li>
-<li><a href="https://srvanderplas.github.io/stat-computing-r-python/part-tools/03-scripts-notebooks.html">Scripts and Notebooks</a></li>
-<li><a href="https://srvanderplas.github.io/stat-computing-r-python/part-tools/04-Rstudio-interface.html">RStudio’s Interface</a></li>
-<li><a href="https://srvanderplas.github.io/stat-computing-r-python/part-tools/05-git-and-github.html">Version Control with Git</a></li>
+<li>Install a package</li>
 </ul>
-</div><div class="column">
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="fig/octocat.png"></p>
-<figcaption><span class="small">Octocat <a href="https://github.com/octocat">Image Source</a></span></figcaption>
-</figure>
-</div>
-</div></div>
+<p>…</p>
+</section>
+
+<section id="next-time" class="title-slide slide level1 center">
+<h1>Next Time</h1>
+<ul>
+<li><p>Review</p>
+<ul>
+<li>indexing,</li>
+<li>data frames/structures,</li>
+<li>thinking in column-shaped objects</li>
+</ul></li>
+<li><p>Coming up: Self Assessment quiz</p></li>
+</ul>
 
 
-</section></section>
+</section>
     </div>
   <div class="quarto-auto-generated-content" style="display: none;">
 <p><img src="N.svg" class="slide-logo"></p>
